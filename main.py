@@ -12,40 +12,9 @@ class Main(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         # Запускаю приложение без рамки
-        self.setWindowFlags(Qt.FramelessWindowHint)
+        # self.setWindowFlags(Qt.FramelessWindowHint)
         self.fname = ''
         # Задаю таблицу стилей
-        self.setStyleSheet("""
-        QWidget {
-            background-color: rgb(148, 210, 189);
-            }
-            
-        QFontComboBox, QComboBox {
-            border: 1px solid black;
-            border-radius: 5px;
-            background-color: rgb(87, 94, 78)
-            }
-        
-        QAction, QMenu, QMenuBar {
-            background-color: rgb(238, 155, 0);
-            }
-        
-        QToolButton {
-            border: 2px solid black;
-            border-radius: 5px;
-            background-color: rgb(238, 155, 0);
-            }
-            
-        QTextEdit {
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: rgb(255, 255, 255);
-            }
-        """)
-        self.cl.setStyleSheet("""border: 2px solid black;
-            border-radius: 5px;
-            background-color: rgb(174, 32, 18);
-        """)
 
         # Задаю иконки
         self.boldButton.setIcon(QIcon(QPixmap('Sprite-0001.png')))
